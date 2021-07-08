@@ -1,0 +1,22 @@
+<suite name = "Loan Department">
+    <test name = "Personal Loan">
+        <classes>
+        <class name = "Day1"/>
+        <methods>
+            <include name = "firstTC"/>
+        </methods>
+
+        <class name = "Day2"/>
+        </classes>
+    </test>
+
+    <test name = "Car Loan">
+        <classes>
+            <class name = "Day3">
+                <methods>
+                    <exclude name = "Mobile.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
