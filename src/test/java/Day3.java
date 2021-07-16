@@ -1,7 +1,4 @@
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 /*
  *Created by owel on 08/07/2021 4:53 PM
@@ -18,9 +15,11 @@ public class Day3 {
         System.out.println("+++++++after each method+++++++");
     }
 
+    @Parameters({"URL"})
     @Test
-    public void webCarLogin(){
+    public void webCarLogin(String uName){
         System.out.println("webcarlogin");
+        System.out.println(uName);
     }
 
     @Test

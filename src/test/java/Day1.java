@@ -1,3 +1,4 @@
+import com.beust.jcommander.Parameter;
 import org.testng.annotations.*;
 
 /*
@@ -21,9 +22,11 @@ public class Day1 {
         System.out.println("hello");
     }
 
-    @Test
-    public void secondTC(){
+
+    @Test @Parameters({"URL"}) //dapat irun mo ito gamit yung xml
+    public void secondTC(String urlname){
         System.out.println("bye");
+        System.out.println(urlname);
     }
 
     @AfterTest
