@@ -20,4 +20,8 @@ public class Day4 {
         System.out.println("apiHouselogin");
     }
 
+    @Test(groups = {"Smoke"})
+    public void smokeDay4(){
+        System.out.println("smoke test in Day 4");
+    }
 }

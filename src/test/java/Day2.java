@@ -9,4 +9,9 @@ public class Day2 {
     public void ploan(){
         System.out.println("good");
     }
+
+    @Test(groups = {"Smoke"})
+    public void smokeDay2(){
+        System.out.println("smoke test in Day 2");
+    }
 }

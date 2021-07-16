@@ -1,4 +1,5 @@
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -26,5 +27,15 @@ public class Day1 {
     @AfterTest
     public void lastExec(){
         System.out.println("i will execute last");
+    }
+
+    @BeforeSuite
+    public void firstSuite(){
+        System.out.println("Im the number 1");
+    }
+
+    @Test(groups = {"Smoke"})
+    public void smokeDay1(){
+        System.out.println("smoke test in Day 1");
     }
 }
