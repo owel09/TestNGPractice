@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
  */
 public class Day2 {
 
-    @Test
+    @Test(timeOut = 4000) //hindi sya magfafail hanggang di natatapos yung 4000 millisecond or 4 seconds
     public void ploan(){
         System.out.println("good");
     }
@@ -14,4 +14,5 @@ public class Day2 {
     public void smokeDay2(){
         System.out.println("smoke test in Day 2");
     }
+
 }

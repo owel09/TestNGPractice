@@ -8,6 +8,16 @@ import org.testng.annotations.Test;
  */
 public class Day3 {
 
+    @BeforeMethod
+    public void befMethod(){
+        System.out.println("-------before each method-------");
+    }
+
+    @AfterMethod
+    public void AfterMethod(){
+        System.out.println("+++++++after each method+++++++");
+    }
+
     @Test
     public void webCarLogin(){
         System.out.println("webcarlogin");
@@ -33,20 +43,6 @@ public class Day3 {
         System.out.println("apicarlogin");
     }
 
-    @AfterSuite
-    public void lastMethod(){
-        System.out.println("Im triggered last and will display in the end");
-    }
-
-    @BeforeMethod
-    public void befMethold(){
-        System.out.println("------before each method-------");
-    }
-
-    @AfterMethod
-    public void AfterMethold(){
-        System.out.println("------after each method-------");
-    }
 
     @Test(groups = {"Smoke"})
     public void smokeDay3(){

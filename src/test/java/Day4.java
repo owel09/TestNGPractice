@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
  */
 public class Day4 {
 
-    @Test
+    @Test(enabled = false) //hindi siya mageexecute kapag naka false ito
     public void webHouseLogin(){
         System.out.println("webHouselogin");
     }
