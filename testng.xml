@@ -1,8 +1,6 @@
 <suite name = "Loan Department">
 
     <test name = "Personal Loan">
-        <parameter name = "URL" value = "personal.com"/>
-
         <classes>
         <class name = "Day1"/>
         <methods>
@@ -15,7 +13,6 @@
     </test>
 
     <test name = "Car Loan">
-        <parameter name = "URL" value="car.com"/>
         <classes>
             <class name = "Day3">
                 <methods>

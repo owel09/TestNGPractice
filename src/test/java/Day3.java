@@ -15,11 +15,9 @@ public class Day3 {
         System.out.println("+++++++after each method+++++++");
     }
 
-    @Parameters({"URL"})
     @Test
-    public void webCarLogin(String uName){
+    public void webCarLogin(){
         System.out.println("webcarlogin");
-        System.out.println(uName);
     }
 
     @Test

@@ -23,10 +23,9 @@ public class Day1 {
     }
 
 
-    @Test @Parameters({"URL"}) //dapat irun mo ito gamit yung xml
-    public void secondTC(String urlname){
+    @Test
+    public void secondTC(){
         System.out.println("bye");
-        System.out.println(urlname);
     }
 
     @AfterTest

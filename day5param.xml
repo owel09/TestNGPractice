@@ -1,0 +1,10 @@
+<suite name = "Medical Loans">
+    <test name = "Covid case Loans">
+    <parameter name = "URL" value = "myseja.com"/>
+    <parameter name = "APIKey" value = "123456"/>
+
+        <classes>
+            <class name = "Day5"/>
+        </classes>
+    </test>
+</suite>
