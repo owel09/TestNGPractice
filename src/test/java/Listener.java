@@ -24,7 +24,7 @@ public class Listener implements ITestListener{
     @Override //lahat ng failed test case magpprint ito
     public void onTestFailure(ITestResult result) {
         ITestListener.super.onTestFailure(result);
-        System.out.println("FAILED");
+        System.out.println("FAILED" + result.getName()); //para magprint yung test case na nag fail
     }
 
     @Override

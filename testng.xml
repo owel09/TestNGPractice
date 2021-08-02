@@ -1,4 +1,4 @@
-<suite name = "Loan Department">
+<suite name = "Loan Department" parallel = "test" thread-count="2">
 
     <test name = "Personal Loan">
         <classes>
